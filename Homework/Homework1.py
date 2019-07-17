@@ -2,54 +2,49 @@
 Please Answer the following question to the best of your abilities.
 If you want to search things up go ahead but copying and pasting
 a solution is not allowed. You can even search up a solution if you
-are really stuck but make sure you understand it and try to rewrite the
+are really stuck but make sure you understand it and rewrite the
 code instead of just copying and pasting.
 
+NOTE: For all the questions below you must proper comment your code
+and this includes writing docstrings for functions, methods and classes.
+However, the questions below do not involve methods and classes so really\
+you need docstrings for functions only.
+
 Question 1
-Given a list of strings return a string with the characters from the strings in the list but ensure the characters are
-interchanged with each other. For example, if the list is [“cat”, “dog”, “yp”] then the return string should be “cdyaoptg”
+Write a function that takes in a number (could be an int or float) and returns
+the number of digits the number has. Remember that a decimal point does not count as
+a digit.
 
 
 Question 2
-Write a function that takes in two strings and returns true if the strings are palindromes and false otherwise
+Write a function that takes a string as input and outputs to the console each character on
+separate lines but with each character repeated 3 times. For example, if the input string is cat
+then the output should look like the following...
+c c c
+a a a
+t t t
 
 
 Question 3
-Write a function that takes in one string and prints to the console the number of vowels and constants in the word
+Write a function that takes in a list of ints and returns the same list but with all of the
+ints turned into strings.
 
 
 Question 4
-Write a function that takes a single string as input and returns the same string but with every other character capitalized.
-Start by capitalizing the first character.
+Is it always possible to convert a string to an int? What about an int to a string? What about a string to a list.
+You can do some investigating if you don't know the answer
 
 
 Question 5
-Write a function that takes in three strings labeled str1, str2 and str3. The function will find all occurrences of
-str2 in str1 and replace it with str3 then return the final string. For example if the input strings are
-hellollo, lo and bob then the return string is “helboblbob”. You are not allowed to use any string methods.
+Explain what aliasing is and also give your own example. Does aliasing occur with ints? Why or why not.
 
 
-Question 6
-Write a function that takes in one string and prints to the console the same string but without any white spaces.
-For example if the input string is “hello world I am the best” then the function should print “helloworldIamthebest” to the console.
-
+Questions 6
+Explain what range does. Experiment with range and explain what range(1,10) is doing. Feel free to look this up.
+I ask this because we only covered stuff like range(5) in class but I never did range with two parameters.
+Also, explain range(1,10,2). What does the third parameter do?
 
 Question 7
-Write a function that prints to the console a star triangle given a height parameter.
-For example, if the height parameter is 5 then the function should print the following to the console...
-*
-**
-***
-****
-*****
+Ok ok I know you want to enjoy your summer break no more questions....
 
-
-Question 8
-Write a function that takes in an int representing a time in 24hr format and returns the time in 12hr format.
-Do not forget to also include pm or am.
-
-
-Question 9
-Write a function that takes in a string and prints to the console all the characters that occurred more than once
-and the number of times the character appears in the string.
 """

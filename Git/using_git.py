@@ -24,8 +24,12 @@ What is one way you can avoid this?
 Question 6
 Create a new repository under you Github account called "Summer Project 2019". You can do this
 directly on the Github website. Now clone the repository and in the repo create a new python file.
-In the python file simple write "print("Hello World")" and save. Now commit the new file and push
+In the python file simply write "print("Hello World")" and save. Now commit the new file and push
 your changes. Go back to the Github website and verify that the python file you pushed is present.
+
+Question 7
+If your friend made changes to the repo and you want to update your local copy to reflect the
+changes what git command(s) can use you in order to do so.
 
 
 Note: There is a lot more to Git then this and you will learn in more detail as you progress
