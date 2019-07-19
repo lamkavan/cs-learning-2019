@@ -5,21 +5,23 @@ a solution is not allowed. You can even search up a solution if you
 are really stuck but make sure you understand it and rewrite the
 code instead of just copying and pasting.
 
-NOTE: For all the questions below you must proper comment your code
+NOTE: For all the questions below you must properly comment your code
 and this includes writing docstrings for functions, methods and classes.
 However, the questions below do not involve methods and classes so really\
-you need docstrings for functions only.
+you need docstrings for functions only. Also, there are many methods for
+str, list, int and etc so do not forget that you can use them (they are very helpful).
 
 Question 1
 Write a function that takes in a number (could be an int or float) and returns
 the number of digits the number has. Remember that a decimal point does not count as
-a digit.
+a digit. Note: This should work for negative numbers as well. Note2: Trailing zeros in float
+can be ignored. For example -12.500 only has 3 digits. The extra 2 zeros are not counted.
 
 
 Question 2
 Write a function that takes a string as input and outputs to the console each character on
-separate lines but with each character repeated 3 times. For example, if the input string is cat
-then the output should look like the following...
+separate lines but with each character repeated 3 times (characters are seperated by spaces).
+For example, if the input string is cat then the output should look like the following...
 c c c
 a a a
 t t t
