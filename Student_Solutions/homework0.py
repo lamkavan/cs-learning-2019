@@ -1,5 +1,5 @@
 # Question 1
-c= "I love computer science"
+z = "I love computer science"
 # print a backwards and each letter on seperate lines
 
 b= a[::-1]
