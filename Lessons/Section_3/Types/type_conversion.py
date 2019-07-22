@@ -56,7 +56,7 @@ print(var2)
 # Ex 2
 var = "2"
 # print(var + 1) do not do this you can not add a string to an int
-print(int(2) + 1)  # this works since we converted the str into an int
+print(int(var) + 1)  # this works since we converted the str into an int
 
 
 # Ex 3
