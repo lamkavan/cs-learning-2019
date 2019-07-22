@@ -3,7 +3,7 @@ Solutions for Homework1
 Note: The docstrings will not be done in the solutions
 """
 
-# Question 1 solution 1
+# Question 1
 def get_num_of_digits(num):
     num_as_str = (str(abs(num))).replace(".", "")  # we must use the positive version)
     return len(num_as_str)
