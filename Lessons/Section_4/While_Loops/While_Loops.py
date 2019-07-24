@@ -41,6 +41,18 @@ while res != "no":
 # and if we see an int that is less than 10 do we do not print the number to the console and skip
 # it
 def weird_list_iteration(list_of_num):
-    ### DO THIS IN CLASS
-    ### Make sure to cover break and continue
-    pass
+    index = 0
+    length = len(list_of_num)
+    while index < length:
+        element = list_of_num[index]
+        if type(element) == type(1.1):
+            print("We hit a ugly number!")
+            break
+        elif element < 10:
+            index += 1
+            continue
+        else:
+            print(element)
+        index += 1
+
+weird_list_iteration([1,2,3,4,11,12,3.3,66])

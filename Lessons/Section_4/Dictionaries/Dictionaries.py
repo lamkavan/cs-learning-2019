@@ -7,7 +7,7 @@ There are many differences between list and dictionaries we will discuss those f
 
 
 # We begin with an easy example
-my_dict = {"a": 1, "b": 2, "c": 3}
+my_dict = {"a": 11, "b": 21, "c": 32}
 print(my_dict["a"])
 print(type(my_dict["a"]))
 print(my_dict)
@@ -27,6 +27,7 @@ print(my_dict.keys(), "Ok so far it makes sense.")
 my_dict["hello"] = 12
 my_dict["bye"] = 1
 my_dict["abc"] = 99
+print(my_dict)
 print(my_dict.keys(), "Still good!!")
 
 
@@ -39,8 +40,11 @@ print(my_dict.keys(), "Still good!!")
 # Write a function that takes in a dictionary and print the key value pairs
 # but only every other one starting with the second.
 def show_every_other_one(input_dict):
-    ### DO THIS IS CLASS
-    pass
+    indicator = -1
+    for key in input_dict.keys():
+        if indicator == 1:
+            print(key, input_dict[key])
+        indicator *= -1
 
 
 # Finally mention what dictionaries can be useful for

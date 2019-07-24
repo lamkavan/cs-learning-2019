@@ -19,10 +19,10 @@ def is_palindrome(str1):
 
 # Now lets write a function to print out an inverted star triangle given a height parameter
 def print_inverted_star_triangle(height):
-    ### DO THIS IS CLASS
-    pass
+    for level in range (height, 0, -1):
+        print("*" * level)
 
-
+print_inverted_star_triangle(5)
 # So far that was easy lets do something more intense...
 # Write a function that takes a sentence and returns a list of all the words in the sentence
 # without the punctuation
