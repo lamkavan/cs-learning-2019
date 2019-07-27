@@ -14,7 +14,7 @@ print("Hello", name)
 # as a number instead of a string. For example...
 age = int(input("What is your age? "))
 print("Next year you will be", age + 1, "years old.")
-# Note the age + 1 will not worm unless you convert the age into an int
+# Note the age + 1 will not work unless you convert the age into an int
 
 
 # If the user just presses return or enter then the empty string is returned ie/ ""
