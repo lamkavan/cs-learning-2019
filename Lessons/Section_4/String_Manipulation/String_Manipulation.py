@@ -45,7 +45,7 @@ def remove_spaces_and_punctuation(sentence):
                 if chr not in punctuation:
                     word_reconstruction += chr
     return word_reconstruction
-remove_spaces_and_punctuation("Hello, My name is \"John\" and I love CS!!")
+print(remove_spaces_and_punctuation("Hello, My name is \"John\" and I love CS!!"))
 
 
 # Finally we write a function that takes a list of strings and returns a single big string

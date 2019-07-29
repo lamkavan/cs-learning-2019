@@ -19,7 +19,7 @@ print("---------------------------------------------------")
 
 # Question 2
 # Write a function to draw a square with a diamond inside (something student requested)
-# Note: the length must be odd otherwise the figure will look weird
+# Note: the length must be odd otherwise the figure will look weird.
 def draw_sqaure_diamond(length):
     num_of_spaces = 1
     delta_spaces = 2
@@ -33,7 +33,7 @@ def draw_sqaure_diamond(length):
                     delta_spaces *= -1
                 print("*" * (num_of_stars // 2) + " " * num_of_spaces + "*" * (num_of_stars // 2))
                 num_of_spaces += delta_spaces
-draw_sqaure_diamond(9)
+draw_sqaure_diamond(13)
 print("---------------------------------------------------")
 
 
@@ -48,15 +48,25 @@ def draw_trident(width):
             print("*" + (" " * (num_of_spaces//2)) + "*" + (" " * (num_of_spaces//2)) + "*")
         # Now draw the bridge part
         print("*" * width)
-        # Finally draw the handdle
+        # Finally draw the handle
         for i in range(4):
             num_of_spaces = width - 1
             print(" " * (num_of_spaces // 2) + "*" + " " * (num_of_spaces // 2))
 draw_trident(9)
-
+print("---------------------------------------------------")
 
 # Question 4
-# Write a function to draw a number 3 given a height parameter
-def draw_number_3(height):
-    ### Do this in class
-    pass
+# Write a function to draw a letter E given a height parameter
+def draw_letter_E(height):
+    if height % 2 != 0:
+        for row in range (height):
+            if row == 0 or row == height-1 or row == height//2:
+                print("*" * height)
+            else:
+                print ("*")
+
+draw_letter_E(3)
+
+
+
+
