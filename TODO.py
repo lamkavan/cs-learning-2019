@@ -10,4 +10,8 @@ Due date: Monday July 29, 2019
     --- Read over git_command.py file found in lesson 2
     --- Homework 2
     --- Assignment 1
+
+Due date: Friday Aug 9, 2019
+    --- Assignment 2
+    --- Homework 3
 """
