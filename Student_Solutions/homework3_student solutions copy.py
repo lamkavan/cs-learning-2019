@@ -20,6 +20,12 @@ def multi(single_list):
 
 print(multi([[1, 3], [4, 7], [9, 5]]))
 
+"""
+Comments
+Nice... but the variable names are poor. empty_list --> flatten_list  and single_list ---> multi_list
+Note: This question would be a lot harder if it were a n by n list. Here recursion would be nice.
+"""
+
 '''
 Question 2
 Write a function that takes a 3 by n list of numbers. Each group (there are three) is a list of n numbers.
@@ -50,6 +56,12 @@ def distinct(diff_list):
 
 print(distinct([[1, 2, 3], [4, 5, 3], [7, 8, 9]]))
 
+"""
+Comments
+Nice, but your print messages are not correct. The sublist do not have the same numbers otherwise they are the same.
+You should say that there are duplicates. 
+"""
+
 '''
 Question 3
 Write a function that takes exactly 20 numbers and returns a 5 by 4 list which contains all the 20 numbers.
@@ -64,6 +76,11 @@ def one_list(nums_20):
 
 
 print(one_list([f for f in range(20)]))
+
+"""
+Comments
+Good
+"""
 
 '''
 Question 4
@@ -98,6 +115,11 @@ def info():
 
     return end_list
 
+"""
+Comments
+Good
+"""
+
 
 '''
 Question 5
@@ -118,6 +140,13 @@ def square(is_square):
 
 
 print(square([[1, 2], [2, 4]]))
+
+"""
+Comments
+The function name is bad you should call it is_sqaure. The input to the function is bad it should be called input_list or something similar.
+Your function is incorrect but close to the correct answer. Your function will only check to see if the the first row has the same amount of numbers
+as rows. Your function will not work for list like [[1,2,3], [1,2] , [1]]
+"""
 
 '''
 Question 6
@@ -141,6 +170,12 @@ def triangle(height):
 
 
 print(triangle(13))
+
+"""
+Comments
+Very good. However, I am not sure why you use print around triangle(13) as that would print none as the function does not return anything.
+"""
+
 
 '''
 Question 7
@@ -172,3 +207,8 @@ def p(length):
 
 
 print(p(8))
+
+"""
+Comments
+Nice work!
+"""
