@@ -19,7 +19,7 @@ a_list.append([1, 55, 88])
 print(a_list)
 
 
-# There is a nice notation we can use to describe multi dim list it is n by n
+# There is a nice notation we can use to describe multi dim list it is n by m
 # n is like a variable that will take on a number once we know its value.
 # For example, if we have a 3 by 3 list (often times written as 3 x 3) then the
 # list could look like... [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -31,10 +31,13 @@ print(a_list)
 
 # Alright now let’s solve some problems involving multi dim list
 # Question 1
-# Write a function that takes in a 5 by 5 list of numbers and prints the list
+# Write a function that takes in a 3 by 3 list of numbers and prints the list
 # row by row but invert the order of the rows
 def reverse_multi_list(multi_list):
-    pass
+    for sublist in multi_list:
+        sublist.reverse()
+        print(sublist)
+reverse_multi_list([[11, 12, 14], [34, 45, 56], [78, 90, 0]])
 
 
 # Question 2
@@ -42,7 +45,20 @@ def reverse_multi_list(multi_list):
 # such that the first sub list contains all the even numbers and second sub list contains
 # only the odd numbers. Do not return the list just print it to the console
 def split_to_even_and_odd(list_of_ints):
-    pass
+    odd_list = []
+    even_list = []
+    master_list = []
+
+    for i in (list_of_ints):
+        if i % 2 == 0:
+            even_list.append(i)
+        else:
+            odd_list.append(i)
+
+    master_list.append(odd_list)
+    master_list.append(even_list)
+    print(master_list)
+split_to_even_and_odd([1,3,5,6,7,10,99])
 
 
 # Question 3
@@ -51,7 +67,13 @@ def split_to_even_and_odd(list_of_ints):
 # The function will find the sub list corresponding to the user id and change the name to the name
 # given as a parameter to the function and return the final list with the correct name change
 def update_name(data, user_id, new_name):
-    pass
+    for person in data:
+        if person[0] == user_id:
+            person[1] = new_name
+    return data
+
+print(update_name([[1, "john", 5, 30], [2, "bob", 6, 50]], 1, "ling"))
+
 
 
 # What can multidimensional list be used for?
