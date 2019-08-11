@@ -5,6 +5,10 @@ interchanged with each other. For example, if the input strings are "cat" and "d
 should be “cdaotgy”. Note you are NOT allowed to use any string methods for this question.
 '''
 
+"""
+Nice! I was not expecting a solution using recursion.
+"""
+
 def interchange(word1, word2):
     if not word1:
         return word2
@@ -22,6 +26,10 @@ You are NOT allowed to use any string methods for this question. If the function
 then we should return False.
 '''
 
+"""
+Good. Not sure why you skip a line after the first case.
+"""
+
 def palindrome(word3):
     if word3 == '':
         return False
@@ -37,6 +45,12 @@ Question 3
 Write a function that takes in one word (str) and prints to the console the number of vowels and consonants in the word.
 The vowels are a,e,i,o and u. You can NOT use any string methods.
 '''
+"""
+I can see what you are trying to do and it is the right idea but you did not finish it nor does it work. 
+For example, consonants = alphabet - vowels will not work as vowels is not even defined before it is used.
+Also, you can not subtract strings. You only need a list of the vowels that is all. Check the solutions.
+
+"""
 """
 vowel_counter = 0
 alphabet = "qwertyuioplkjhgfdsazxcvbnm"
@@ -61,12 +75,16 @@ Write a function that takes a single string as input and returns the same string
 Start by capitalizing the first character.
 '''
 
+"""
+Good. No issues. 
+"""
+
 def every_other(word5):
     switched = ""
     i = True
     for j in word5:
         if i:
-            switched +=  j.upper()
+            switched += j.upper()
         else:
             switched += j.lower()
         if j != ' ':
@@ -81,6 +99,10 @@ Write a function that takes in three strings labeled str1, str2 and str3. The fu
 str2 in str1 going from left to right and replace it with str3 then return the final string. For example if the input
 strings are hellollo, lo and bob then the return string is “helboblbob”.
 '''
+
+"""
+Looks good to me
+"""
 def replace(str1, str2, str3):
     new_string = ''
     while str1.find(str2) >= 0:
@@ -98,6 +120,10 @@ For example if the input string is “hello world I am the best” then the func
 the console. Do NOT use any string methods. There is already a string method that can do this but you are not allowed
 to use it.
 '''
+
+"""
+Nice!
+"""
 
 def remove(word6):
     more_strings = ''
@@ -119,6 +145,10 @@ For example, if the height parameter is 5 then the function should print the fol
 *****
 '''
 
+"""
+Perfect
+"""
+
 def height(num):
     for p in range(num):
         print("*" * (p + 1))
@@ -130,12 +160,17 @@ Write a function that takes in a word (str) and prints to the console all the ch
 and the number of times the character appears in the string. Note that ordering does not matter and you are NOT
 allowed to use string methods. You can still use dict, list, int and float methods though if you like.
 '''
-
+""" 
+No answer
+"""
 
 '''
 Question 9
 What are two difference between a list and a tuple?
 '''
+"""
+Perfect
+"""
 
 #The difference between a list and a tuple is that a tuple has curly brakcets whereas a list has square brackets.
 #Also tuples are immutable and lists are mutable
@@ -144,6 +179,9 @@ What are two difference between a list and a tuple?
 Question 10
 What are some methods for tuples? What do you notice?
 '''
+"""
+Good
+"""
 #There are not many methods for tuple. The only two which are suugested by pycharm and count() and index().
 #There are not many ways to alter a tuple with methods
 
@@ -151,6 +189,9 @@ What are some methods for tuples? What do you notice?
 Question 11
 When can tuples be useful? Give an example of when tuples are better than list.
 '''
+"""
+Fine
+"""
 #Situations where a tuple is better than a list is when you do not want your array to be mutable.
 #When you know that some data will never change, a tuple is better to store it.
 
@@ -158,5 +199,8 @@ When can tuples be useful? Give an example of when tuples are better than list.
 Question 12
 Does aliasing happen with tuples?
 '''
+"""
+Perfect
+"""
 #Since tuples are immutable, aliasing will not occur with them. On the other hand with a list, being a mutable data type
 #, it will be prone to aliasing
