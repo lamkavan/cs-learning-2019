@@ -65,7 +65,26 @@ print(largest_num([1, 4, [5, 6, [100, 99]], 66, [], [43, 1000]]))
 # Write a recursive function that takes a single dimension list and returns the reverse of that list.
 # Note: this can be easily done in one line normally but we are practicing recursion
 
+def reverse_list(input_list):
+    # Base Case
+    if len(input_list) == 1:
+        return input_list
+    #Recursive Case
+    return [input_list[-1]] + reverse_list(input_list[:-1])
+print (reverse_list([2,3,4,5]))
+
+
 
 # Question 5
 # Write a recursive function that finds the sum of all the digits of a given whole number. Return the sum.
+def nums_sum(num):
+    #Base Case
+    if len(str(num)) == 1:
+        return num
+    #Recursive Case
+    str_version = str(num)
+    return int(str_version[0]) + nums_sum(int(str_version[1:]))
+
+print(nums_sum(12342))
+
 
