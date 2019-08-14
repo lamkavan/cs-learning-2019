@@ -19,6 +19,25 @@ class Person:
         self.name = name
         self.height = height
 
+    def __lt__(self, other_person):
+        if self.age < other_person.age:
+            return True
+        else:
+            return False
+
+    def __eq__(self, other_person):
+        if self.age == other_person.age:
+            return True
+        else:
+            return False
+
+    def __len__(self):
+        return self.height
+
+    def __str__(self):
+        return "Hi my name is " + self.name
+
+
     def get_name(self):
         return self.name
 
@@ -29,7 +48,9 @@ class Person:
         return self.height
 
 john = Person(10, "Jonny", 130)
+kk = Person(14, "Joy", 131)
 print(john.get_age())
+print(kk.get_age())
 
 
 """
@@ -74,7 +95,9 @@ class Course:
     """
     def print_student_names(self, order=False):
         if order:
-            print(self.student_names.sort())
+            temp = self.student_names.copy()
+            temp.sort()
+            print(temp)
         else:
             print(self.student_names)
 
@@ -90,7 +113,7 @@ that the student was removed from that course (need to specify the course name).
 Lets use our class and see if everything works as expected
 """
 a_course = Course("ICS4U")
-a_course.add_student("Bob")
+a_course.add_student("zBob")
 a_course.add_student("Lee")
 a_course.add_student("Ding")
 a_course.add_student("Dong")
@@ -98,7 +121,7 @@ a_course.print_student_names()
 a_course.print_student_names(False)
 # a_course.remove_student_name("Jing")
 # a_course.remove_student_name("Lee")
-a_course.print_student_names()
+a_course.print_student_names(True)
 
 
 """
@@ -106,6 +129,19 @@ Alright now it is your turn.
 Write and design a class called AreaFinder. AreaFinder will have one method for each shape.
 AreaFinder needs to be able to take care of circles, rectangles and triangles.
 """
+class AreaFinder:
+    def get_area_rec(self, height, width):
+        return height * width
+
+    def get_area_circle(self, radius):
+        return 3.14 * (radius ** 2)
+
+    def get_are_trianlge(self, base, height):
+        return (base * height) // 2
+
+x = AreaFinder()
+print (x.get_area_rec(6, 10))
+
 
 
 """
@@ -113,3 +149,7 @@ There are a lot more special methods. __init__ is one of them but __len__, __str
 exist. There are actually a lot more than this but we will not have time to cover them 
 Ok time to upgrade the Person class!!!
 """
+
+print(kk == john)
+print(len(kk))
+print(kk)
