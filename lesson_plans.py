@@ -60,18 +60,19 @@ The following is the order in which content should be covered and will be update
 9) Sorting algorithms
     --- Bubble sort
     --- Insertion sort
-    --- Merge sort
+    --- Selection sort (if time permits)
+    --- Merge sort (if time permits)
     [Homework 6 is assigned]
 
-10) Algorithm analysis
+10) Working with JSON and TXT files
+    --- How to write and read from TXT file
+    --- How to work with JSON data
+    [Assignment 3 is assigned]
+
+11) Algorithm analysis
     --- Which algorithm is better and how to tell which is faster
     --- Best case vs worse case
     --- Big-Oh notation (simple)
-    [Assignment 3 is assigned]
-
-11) Working with JSON and TXT files
-    --- How to write and read from TXT file
-    --- How to work with JSON data
     [Homework 7 is assigned]
 
 12) Inheritance and Polymorphism
