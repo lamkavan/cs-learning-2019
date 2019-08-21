@@ -1,0 +1,6 @@
+name,age,height
+john,12,145
+kelly,16,160
+bob,5,100
+jeff,60,180
+ding,15,170

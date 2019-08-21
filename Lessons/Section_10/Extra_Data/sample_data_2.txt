@@ -1,0 +1,5 @@
+food,cost
+apple,2
+pear,3
+cake,5
+rice,10
