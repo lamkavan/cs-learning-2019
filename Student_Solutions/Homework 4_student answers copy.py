@@ -14,6 +14,10 @@ def question1(n):
     blah
 '''
 
+"""
+Comments:
+Good job
+"""
 
 def question1(n):
     # Base Case
@@ -42,6 +46,10 @@ def ask_age():
     print("You are a child")
 '''
 
+"""
+Comments:
+Good job
+"""
 
 def ask_age():
     age = int(input("Enter your age: "))
@@ -71,6 +79,10 @@ def search(list_of_nums, num):
 The code above is what we call linear search. Your job is to implement this using recursion.
 '''
 
+"""
+Comments:
+Good job
+"""
 
 def search(list_of_nums, num):
     # Base case

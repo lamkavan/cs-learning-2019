@@ -11,6 +11,10 @@ another method (__str__) to be able to see all the details just by using print. 
 the user to be able to change the price of a Computer.
 '''
 
+"""
+Comments:
+Did not fully complete the questions. You are missing the __str__ part and the ability to change price of computer
+"""
 
 class Computer:
     def __init__(self, name, ram_size, cpu, price, hdd_size):
@@ -66,6 +70,10 @@ also be a way to delete emails off the database. Below is an example of its usag
 [OUT] "dingdong@live.ca owned by kate was removed from the database"
 '''
 
+"""
+Comments:
+What is going on!?
+"""
 
 class EmailManager:
     def __init__(self):
@@ -80,6 +88,6 @@ class EmailManager:
 a = EmailManager
 a.add_email = "shruti@gmail.com"
 a.add_name = "shruti"
-b = self.emails
+b = self.emails   #### Do not use self outside the class (makes no sense)
 
 print(b)
