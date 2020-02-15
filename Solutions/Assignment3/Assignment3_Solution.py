@@ -79,16 +79,16 @@ def list_of_names_to_file(name_list):
 # Question 6
 def binary_search(num_list, num):
     lower_bound = 0
-    upper_bound = len(num_list)
+    upper_bound = len(num_list) - 1
 
     while lower_bound <= upper_bound:
         middle = (lower_bound + upper_bound) // 2
         if num_list[middle] == num:
             return True
         elif num_list[middle] > num:
-            upper_bound -= 1
+            upper_bound = middle - 1
         else:
-            lower_bound += 1
+            lower_bound = middle + 1
     return False
 
 
