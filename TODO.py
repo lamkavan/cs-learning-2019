@@ -19,6 +19,6 @@ Due date: Monday Aug 19, 2019
     --- Homework 4 (Recursion)
     --- Homework 5 (Classes)
 
-Due date: Monday Aug 26, 2019
+Due date: Monday Aug 26, 2019 
     --- Homework 6 (Search and sort)
 """
